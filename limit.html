@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi Limit - C-Pro</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">C-<span>Pro</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="index.html#materi">Materi</a></li>
+                <li><a href="tentang.html">Tentang</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="card-icon" style="margin: 0 auto 1rem;">lim</div>
+            <h1 style="text-align: center; font-size: 2.5rem; color: #0f172a;">Konsep Limit Fungsi</h1>
+            <p style="text-align: center; color: #64748b;">Memahami perilaku fungsi saat mendekati nilai tertentu.</p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container" style="max-width: 800px;"> 
+            <h2>Apa itu Limit?</h2>
+            <p style="margin-bottom: 1.5rem;">
+                Limit menjelaskan nilai suatu fungsi ketika input mendekati nilai tertentu. Dalam kalkulus, limit digunakan untuk mendefinisikan turunan, integral, dan kontinuitas. Bayangkan Anda mendekati sebuah titik di sebuah kurva; nilai limit adalah tinggi yang Anda tuju saat Anda berada sangat dekat tetapi belum tentu menyentuhnya.
+            </p>
+
+            <div class="math-preview">
+                $$ \lim_{x \to c} f(x) = L $$
+            </div>
+            <p style="font-size: 0.9rem; text-align: center; color: var(--text-light); margin-bottom: 2rem;">
+                Dibaca: "Limit dari f(x) untuk x mendekati c adalah L"
+            </p>
+
+            <hr style="margin: 2rem 0; border: 0; border-top: 1px solid #e2e8f0;">
+
+            <h2>Contoh Soal</h2>
+            <p>Tentukan nilai limit berikut:</p>
+            
+            <div style="background: #fff; padding: 2rem; border-radius: 12px; border: 1px solid #e2e8f0; margin-top: 1rem;">
+                <p>$$ \lim_{x \to 2} (2x + 3) $$</p>
+                <p><strong>Penyelesaian:</strong></p>
+                <p>Kita bisa mensubstitusi langsung nilai x = 2 ke dalam fungsi:</p>
+                <p>$$ = 2(2) + 3 $$</p>
+                <p>$$ = 4 + 3 $$</p>
+                <p>$$ = 7 $$</p>
+            </div>
+
+            <div style="margin-top: 3rem; display: flex; justify-content: space-between;">
+                <a href="index.html" class="btn-primary">&larr; Kembali ke Beranda</a>
+                <a href="turunan.html" class="btn-primary">Lanjut Materi Turunan &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container"><p>&copy; 2025 C-Pro Kelompok 1, All rights reserved.</p></div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi Integral - C-Pro</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">C-<span>Pro</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="index.html#materi">Materi</a></li>
+                <li><a href="tentang.html">Tentang</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="card-icon" style="margin: 0 auto 1rem;">&int;</div>
+            <h1 style="text-align: center; font-size: 2.5rem; color: #0f172a;">Materi Integral</h1>
+            <p style="text-align: center; color: #64748b;">Konsep antiturunan dan perhitungan luas di bawah kurva.</p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container" style="max-width: 800px;">
+            
+            <div class="card" style="margin-bottom: 2rem;">
+                <h3>1. Integral Tak Tentu</h3>
+                <p style="margin-bottom: 1rem;">Integral adalah kebalikan dari turunan (antiturunan). Integral tak tentu menghasilkan suatu fungsi baru dengan konstanta C.</p>
+                <div class="math-preview">
+                    $$ \int f(x) dx = F(x) + C $$
+                </div>
+                <p>Rumus Dasar Pangkat:</p>
+                <div class="math-preview">
+                    $$ \int x^n dx = \frac{1}{n+1} x^{n+1} + C $$
+                </div>
+            </div>
+
+            <div class="card" style="margin-bottom: 2rem;">
+                <h3>2. Integral Tentu</h3>
+                <p style="margin-bottom: 1rem;">Integral tentu memiliki batas atas dan batas bawah, biasanya digunakan untuk menghitung luas daerah.</p>
+                <div class="math-preview">
+                    $$ \int_{a}^{b} f(x) dx = F(b) - F(a) $$
+                </div>
+                
+                
+                <hr style="margin: 1.5rem 0; border: 0; border-top: 1px solid #e2e8f0;">
+
+                <div style="background: rgba(16, 185, 129, 0.05); padding: 1.5rem; border-radius: 8px; border-left: 4px solid #10b981;">
+                    <h4 style="margin-bottom: 0.5rem; color: #059669;">Contoh Soal:</h4>
+                    <p>Hitunglah nilai dari int_{1}^{2} 2x \ dx.</p>
+                    <hr style="border: 0; border-top: 1px dashed var(--text-light); margin: 10px 0; opacity: 0.3;">
+                    <p><strong>Penyelesaian:</strong></p>
+                    
+                    <p>1. Integralkan fungsinya terlebih dahulu:</p>
+                    <p style="text-align: center;">int 2x \ dx = x^2</p>
+                    
+                    <p>2. Masukkan batas atas (2) dan batas bawah (1):</p>
+                    $$ [x^2]_{1}^{2} = (2^2) - (1^2) $$
+                    $$ = 4 - 1 $$
+                    $$ = 3 $$
+                </div>
+            </div>
+
+            <div style="margin-top: 3rem; display: flex; justify-content: space-between;">
+                <a href="turunan.html" class="btn-primary">&larr; Kembali ke Turunan</a>
+                <a href="index.html" class="btn-primary">Selesai Belajar &check;</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container"><p>&copy; 2025 C-Pro Kelompok 1, All rights reserved.</p></div>
+    </footer>
+</body>
+</html>

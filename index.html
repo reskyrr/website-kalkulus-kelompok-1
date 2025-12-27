@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C-Pro | Learning Calculus</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <script>
+        if (history.scrollRestoration) {
+            history.scrollRestoration = 'manual';
+        } else {
+            window.onbeforeunload = function () {
+                window.scrollTo(0, 0);
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">C-<span>Pro</span></a> 
+            <ul class="nav-links">
+                <li><a href="#">Beranda</a></li> 
+                <li><a href="#materi">Materi</a></li>
+                <li><a href="tentang.html">Tentang</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="container hero-content">
+            <div class="hero-image">
+                <img src="img/image1.png" alt="Calculus Illustration">
+            </div>
+            <div class="hero-text">
+                <h1>Memahami Konsep Kalkulus dengan Mudah</h1>
+                <p>Mempelajari Limit, Turunan, dan Integral dengan pendekatan materi yang intuitif dan interaktif.</p>
+                <a href="#materi" class="btn-primary">Mulai Belajar Sekarang</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="materi" class="section">
+        <div class="container">
+            <div class="grid-cards">
+                <div class="card">
+                    <div class="card-icon">lim</div>
+                    <h3>Limit</h3>
+                    <p>Konsep dasar tentang kecenderungan suatu fungsi saat mendekati titik tertentu.</p>
+                    <div class="math-preview">$$ \lim_{x \to 0} \frac{\sin x}{x} = 1 $$</div>
+                    <a href="limit.html" class="btn-primary">Pelajari Limit &rarr;</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">d/dx</div>
+                    <h3>Turunan</h3>
+                    <p>Studi tentang laju perubahan sesaat dan kemiringan garis singgung kurva.</p>
+                    <div class="math-preview">$$ f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h} $$</div>
+                    <a href="turunan.html" class="btn-primary">Pelajari Turunan &rarr;</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">∫</div>
+                    <h3>Integral</h3>
+                    <p>Menghitung luas di bawah kurva, volume benda putar, dan akumulasi total.</p>
+                    <div class="math-preview">$$ \int_{a}^{b} f(x) dx = F(b) - F(a) $$</div>
+                    <a href="integral.html" class="btn-primary">Pelajari Integral &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 C-Pro Kelompok 1, All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>
